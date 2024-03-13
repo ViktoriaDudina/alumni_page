@@ -1,0 +1,48 @@
+<div class="hero text-center">
+  <header>
+    <h1>The nice shiny home of our class</h1>
+  </header>
+</div>
+
+<div class="container">
+  <div class="textbefore m-5">
+    <p>Welcome to Codefactory, where the future of tech education unfolds! At Codefactory, we offer a dynamic and immersive learning experience that equips you with the skills and knowledge you need to thrive in the ever-evolving world of technology. Whether you're an aspiring coder, a tech enthusiast, or a seasoned professional looking to upskill, Codefactory is your gateway to the digital future. </p>
+  </div>
+  <div class="row">
+    <div class="col col-12 col-md-9">
+      <div class="row">
+        <div class="col col-12 col-md-6 col-lg-4 mb-4" *ngFor="let item of homeEntries">
+          <div class="card">
+            <img src="{{ item.image}}" class="img-fluid rounded-start" alt="">
+            <div class="card-body">
+              <h3 class="card-title">
+                {{ item.title }}
+              </h3>
+              <p class="card-text">
+                {{ item.body }}
+              </p>
+              <a href="{{ item.url }}" class="btn btn-outline-primary">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="col col-sm-12 col-md-3">
+      <h3>Calendar</h3>
+      <table class="calendar">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of homeCalEntries">
+            <td><strong>{{ item.date }}</strong><br>{{ item.time }}</td>
+            <td>{{ item.desc }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="hero">
+  <header>
+    <h1>Our Alumni</h1>
+    <p>Get to know our students and share ideas and thoughts. Many of our students have already reached out to already existing students in advance to get a glimpse of student life at our academy.</p>
+  </header>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-9">
+      <div class="row">
+        <div class="col col-12 col-md-6 col-lg-4 mt-4" *ngFor="let item of Alumnis; index as Info">
+          <div class="card mt-3">
+            <img src="{{item.image}}" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Name: {{item.fname}} {{item.lname}}</h5>
+              <p class="card-text">Age: {{item.age}}</p>
+              <p class="card-text">Date of Enrollment: {{item.enrollmentDate}}/{{item.enrollmentMonth}}/{{item.enrollmentYear}}.</p>
+              <p class="card-text">Date of Graduation: {{item.graduationDate}}/{{item.graduationMonth}}/{{item.graduationYear}}.</p>
+              <a routerLink="/alumni/{{ Info }}" class="btn btn-outline-primary">More info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="col col-sm-12 col-md-3 mt-5">
+      <h3>Calendar</h3>
+      <table class="calendar">
+          <thead>
+              <tr>
+              <th>Date</th>
+              <th>Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let item of homeCalEntries">
+              <td><strong>{{ item.date }}</strong><br>{{ item.time }}</td>
+              <td>{{ item.desc }}</td>
+              </tr>
+          </tbody>
+      </table>
+    </aside>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+.hero {
+  background-image: url(/assets/images/hero/hero-home.jpg);
+}
+
+.column:first-child {
+  flex-basis: 100%;
+
+  .card {
+    flex-direction: row;
+  }
+
+  img {
+    max-height: 240px;
+    object-fit: cover;
+  }
+}
+
+
+
+
+header {
+  opacity: 0;
+  animation: ani 2s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.textbefore {
+  opacity: 0;
+  animation: ani 4s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.row {
+  opacity: 0;
+  animation: ani 4s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

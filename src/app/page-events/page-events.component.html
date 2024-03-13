@@ -1,0 +1,48 @@
+<div class="text-center hero">
+  <header>
+    <h1>Events</h1>
+    <p class="mb-4">Here you can find all the information about our upcoming events at CodeFactory Vienna and some other
+      events worth mentioning. If you have any suggestions for events to add to the list please feel free to contact us
+      and let us know.</p>
+  </header>
+</div>
+<div class="container">
+  <table class="table table-hover table-borderless">
+    <thead>
+      <tr>
+        <th class="fixed-column">Title</th>
+        <th class="text-center">Date</th>
+        <th class="text-end">Time</th>
+        <th class="text-center">Location</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let event of events">
+      <tr (click)="eventDetailsClick(event)" class="table-secondary mousePointer">
+        <td class="fw-bold fixed-column">{{ event.name }}</td>
+        <td class="text-center">{{ event.year }}-<span *ngIf="event.month < 10">0</span>{{ event.month }}-<span
+            *ngIf="event.date < 10">0</span>{{ event.date }}</td>
+        <td class="text-end">{{ event.time }}</td>
+        <td class="text-center">{{ event.location }}</td>
+      </tr>
+      <tr *ngIf="event.clicked == true">
+        <td colspan="4"><span class="fw-bold">description:</span> {{ event.description }}</td>
+      </tr>
+      <tr *ngIf="event.clicked == true">
+        <td colspan="4"><span class="fw-bold">address:</span> {{ event.address }}</td>
+      </tr>
+      <tr *ngIf="event.clicked == true">
+        <td colspan="4"><span class="fw-bold">duration:</span> {{ event.duration }}</td>
+      </tr>
+      <tr *ngIf="event.clicked == true">
+        <td colspan="4">
+          <span class="fw-bold">entry fee: </span>
+          <span *ngIf="event.price !== 0">€{{ event.price }}</span>
+          <span *ngIf="event.price == 0">free</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4"> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

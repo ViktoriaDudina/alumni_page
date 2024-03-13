@@ -1,0 +1,51 @@
+<div class="hero">
+  <header>
+    <h1>Stories</h1>
+    <p>Read about the unique and exciting stories of graduates of our academy.</p>
+  </header>
+</div>
+
+<div class="container">
+    <div class="textbefore m-5">
+        <p>In the ever-evolving landscape of technology and web development, the journeys of our alumni are stories of
+            determination, innovation, and relentless pursuit of excellence. Meet five outstanding individuals from
+            different backgrounds and with diverse skill sets who have carved their paths to success in the fields of
+            full
+            stack development, frontend development, and backend development. Their stories serve as inspiring examples
+            of
+            what can be achieved in the dynamic world of technology. Let's explore their remarkable success stories.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-9">
+            <div class="row">
+                <div class="col col-12 col-lg-6 col-xl-4 mb-4" *ngFor="let list of alumniArr">
+                    <div class="card">
+                        <img src="{{list.image}}" class="card-img-top" alt="photo">
+                        <div class="card-body">
+                            <h5 class="card-title">{{list.name}} - {{list.job}}</h5>
+                            <p class="card-text">{{list.story}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="col col-sm-12 col-md-3 mt-5">
+            <h3>Calendar</h3>
+            <table class="calendar">
+                <thead>
+                    <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of homeCalEntries">
+                    <td><strong>{{ item.date }}</strong><br>{{ item.time }}</td>
+                    <td>{{ item.desc }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+    </div>
+</div>

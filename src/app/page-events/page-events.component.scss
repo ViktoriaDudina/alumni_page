@@ -1,0 +1,43 @@
+.hero {
+  background-image: url("/assets/images/hero/hero-events.jpg");
+}
+
+.mousePointer {
+  cursor: pointer;
+}
+
+.fixed-column {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+header {
+  opacity: 0;
+  animation: ani 2s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.table {
+  opacity: 0;
+  animation: ani 5s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

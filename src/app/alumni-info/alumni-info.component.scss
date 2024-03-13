@@ -1,0 +1,22 @@
+.hero {
+    background-image: url(/assets/images/hero/hero-alumni.jpg);
+}
+
+.card-img-top {
+    max-height: 450px;
+}
+
+.row {
+    opacity: 0;
+    animation: ani 2s forwards;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

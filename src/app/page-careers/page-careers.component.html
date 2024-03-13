@@ -1,0 +1,51 @@
+<div class="hero">
+    <header>
+        <h1>Careers</h1>
+        <p>Here are some possible career options when you decide to work in tech</p>
+    </header>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-7 col-lg-8 col-xl-9">
+            <div class="row row-cols-xs-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-2 row-cols-xxl-2">
+
+                <div *ngFor="let career of careerArr" class="mt-3">
+                    <div class="card" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="{{career.image}}" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body py-0">
+                                    <h5 class="card-title">{{career.name}}</h5>
+                                    <p class="card-text">Qualification: {{career.qualification}}</p>
+                                    <p class="card-text"><small class="text-body-secondary">Salary: {{career.salary}}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <aside class="col col-sm-12 col-md-5 col-lg-4 col-xl-3 mt-5">
+            <h3>Calendar</h3>
+            <table class="calendar">
+                <thead>
+                    <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of homeCalEntries">
+                    <td><strong>{{ item.date }}</strong><br>{{ item.time }}</td>
+                    <td>{{ item.desc }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+    </div>
+</div>

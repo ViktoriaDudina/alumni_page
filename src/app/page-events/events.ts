@@ -1,0 +1,123 @@
+export const events = [
+    {
+        name: "Workshop: Python and AI",
+        year: 2023,
+        month: 11,
+        date: 9,
+        time: "16:00",
+        duration: "2h - 3h",
+        location: "CodeFactory Vienna",
+        address: "Kettenbrückengasse 23/2/12, 1050 Vienna",
+        price: 15,
+        description: "Artificial intelligence promises to revolutionise the most productive activities through positive augmentation of human effort, the automation of manual, monotonous workloads and by exposing us to fresh insights through machine learning. The development of technologies such as deep learning, have resulted in great advances in the last couple of years and we are on the brink of widespread adoption. Perfect for developers, analysts, business intelligence analysts or anyone curious to learn about AI, learn how to build your own simple AI applications in Python that demonstrate \"computer vision\" and \"hearing\"",
+        clicked: false
+    },{
+        name: "Company Meet'n'Greet: T-Mobile",
+        year: 2023,
+        month: 11,
+        date: 13,
+        time: "11:00",
+        duration: "1h",
+        location: "online",
+        address: "Zoom meeting - link will be sent shortly before the event",
+        price: 0,
+        description: "Clive Owen, senior developer at T-Mobile Austria, is joining us in this meet and greet online Zoom call. He will tell us about what the company does, what his job is and what they are looking for in the application process. Please send our dear Andi a quick email until they day before if you want to participate so that we know who to invite to the Zoom meeting.",
+        clicked: false
+    },{
+        name: "Workshop: Cybersecurity",
+        year: 2023,
+        month: 11,
+        date: 16,
+        time: "16:00",
+        duration: "2h - 3h",
+        location: "CodeFactory Vienna",
+        address: "Kettenbrückengasse 23/2/12, 1050 Vienna",
+        price: 25,
+        description: "Cybersecurity, attack techniques, and countermeasures: Learn about the latest hacker techniques and find out how to defend yourself against advanced attacks with limited security budget and time. The workshop uses realistic exercises to teach the basics of cybersecurity. The selection of the practical course content is based on the prestigious Mitre Att&ck project. The theoretical part is based on industry standards such as: NIST Standards, CIS Benchmarks, OWASP and PTES. In the course, we consistently change the perspective between attack and defense on every topic. This enables participants to derive direct defensive measures and quick wins from the experience of the practical laboratory exercises. The workshop also discusses advanced topics such as antivirus bypass, WAFs, intrusion protection systems, firewalls, spam gateways, proxy whitelisting, sandboxes, EDRs, and XSS filters.",
+        clicked: false
+    },{
+        name: "CFV Code Retreat Weekend",
+        year: 2023,
+        month: 11,
+        date: 25,
+        time: "9:00",
+        duration: "from Saturday morning until Sunday afternoon",
+        location: "Hotel Kaiser Franz Joseph, Wien",
+        address: "Sieveringer Straße 4, 1190 Vienna",
+        price: 0,
+        description: "Our Coderetreat is a 2-days-long, intensive practice event that focuses on the fundamentals of software development and design. By providing developers with the opportunity to engage in focused practice, away from the pressures of 'getting things done', the Coderetreat format has proven to be highly effective for skill improvement. Practicing the basic principles of modular and object-oriented design helps developers enhance their ability to write code that minimizes the cost of change over time.",
+        clicked: false
+    },{
+        name: "Company Meet'n'Greet: BRZ",
+        year: 2023,
+        month: 11,
+        date: 29,
+        time: "15:00",
+        duration: "1h",
+        location: "online",
+        address: "Zoom meeting - link will be sent shortly before the event",
+        price: 0,
+        description: "Susi Sorglos, head of human resources at Bundesrechnungszentrum, is joining us in this meet and greet online Zoom call. She will tell us about what the company does and what they are looking for in the application process. Please send our dear Andi a quick email until they day before if you want to participate so that we know who to invite to the Zoom meeting.",
+        clicked: false
+    },{
+        name: "Workshop: Advanced Node.js 12",
+        year: 2023,
+        month: 11,
+        date: 30,
+        time: "16:00",
+        duration: "2h - 3h",
+        location: "CodeFactory Vienna",
+        address: "Kettenbrückengasse 23/2/12, 1050 Vienna",
+        price: 18,
+        description: "In this workshop we are going to help you understand how the Node runtime works and we will learn about all the powerful built-in features that you can use in every Node process. Along the way, you\'re going to be learning about things like modules management, V8, concurrency and event loop, streams, child processes, and clusters. You\'ll also be using npm and Node's event-driven modules for networking and HTTP web servers. You\'ll want to make sure you\'re already up to speed on modern JavaScript and the basics of Node.js.",
+        clicked: false
+    },{
+        name: "Alumni Adventmarkt Get-Together",
+        year: 2023,
+        month: 12,
+        date: 5,
+        time: "17:00",
+        duration: "open end",
+        location: "Adventmarkt Rathausplatz",
+        address: "Adventmarkt Rathausplatz - meeting point under the central christmas tree",
+        price: 0,
+        description: "Like last year we are going to enjoy each others company over Punsch or Glühwein at the Adventmarkt at Rathausplatz.",
+        clicked: false
+    },{
+        name: "Workshop: Browser Cookies",
+        year: 2023,
+        month: 12,
+        date: 7,
+        time: "16:00",
+        duration: "2h - 3h",
+        location: "CodeFactory Vienna",
+        address: "Kettenbrückengasse 23/2/12, 1050 Vienna",
+        price: 10,
+        description: "This has nothing to do with christmas cookies. Websites use cookies to create a better customer experience for their visitors. Using cookies, websites can tailor certain aspects of their website specifically to you. It may restore the items you\'ve added to your shopping cart during the last visit, automatically sign you in, help by auto-filling forms, or remember other preferences. In this workshop we are answering all your questions about browser cookies.",
+        clicked: false
+    },{
+        name: "Alumni Christmas Party",
+        year: 2023,
+        month: 12,
+        date: 14,
+        time: "17:00",
+        duration: "open end",
+        location: "CodeFactory Vienna",
+        address: "Kettenbrückengasse 23/2/12, 1050 Vienna",
+        price: 0,
+        description: "The annual christmas party at CodeFactory Vienna. We provide food and drinks but please feel free to bring your stuff as well.",
+        clicked: false
+    },{
+        name: "Alumni New Years Brunch",
+        year: 2024,
+        month: 1,
+        date: 7,
+        time: "11:30",
+        duration: "open end",
+        location: "Schloss Wilhelminenberg",
+        address: "Savoyenstraße 2, 1160 Wien",
+        price: 44,
+        description: "The annual new years brunch. This time we will cick off this year in style at Schloss Wilhelminenberg. From 11:30 am until 2:30 pm we can enjoy a lavish brunch buffet for € 44.- per person (exclusive drinks).",
+        clicked: false
+    }
+];

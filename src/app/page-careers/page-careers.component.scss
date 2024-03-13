@@ -1,0 +1,38 @@
+.hero {
+    background-image: url(/assets/images/hero/hero-careers.jpg);
+}
+
+.img-fluid {
+    height: 250px;
+    margin-top: 30px;
+}
+
+header {
+    opacity: 0;
+    animation: ani 2s forwards;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.row {
+    opacity: 0;
+    animation: ani 4s forwards;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

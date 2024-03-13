@@ -1,0 +1,120 @@
+/* You can add global styles to this file, and also import other style files */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100dvh;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Aleo, serif;
+}
+
+p {
+  max-width: 72ch;
+}
+
+.m-l-auto {
+  margin-left: auto;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  height: 3rem;
+  background-image: url(/assets/images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  text-indent: 3.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Aleo", serif;
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+  height: 60dvh;
+  margin-bottom: 4rem;
+  overflow: hidden;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  header {
+    margin-top: 3rem;
+    max-width: 70ch;
+  }
+
+  h1 {
+    max-width: max-content;
+    margin: 0 auto 1rem;
+  }
+
+  h1,
+  p {
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem 0.5rem;
+    color: white;
+    background-color: rgba(black, 0.5);
+    text-shadow: 0px 0px 4px black;
+  }
+}
+
+.card {
+  height: 100%;
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-top: auto;
+  }
+}
+
+.card-img,
+.card-img-top {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.textbefore {
+  display: flex;
+  justify-content: center;
+}
+
+.calendar {
+  tr {
+      border-bottom: 5px solid #ccc;
+  }
+
+  td {
+      vertical-align: top;
+      padding: 0.5rem 0.75rem 0.5rem 0;
+  }
+}
